@@ -335,6 +335,7 @@ html[dir="rtl"] .card-no{right:auto;left:18px}
   .actions .pill:not(.portal-student):not(.portal-teacher){display:none}
   .menu{display:block}
   .hero-grid{grid-template-columns:1fr}
+  .hero-media{order:-1}
   .hero-copy{padding-left:0}
   .hero-media{padding:46px 34px 52px}
   .hero-frame img{height:570px}
@@ -537,6 +538,7 @@ html[dir="rtl"] .card-no{right:auto;left:18px}
 }
 
 /* FINAL RESPONSIVE POLISH — desktop/tablet/phone */
+.hero-actions{display:none !important;}
 html,body{width:100%;max-width:100%;}
 body{min-width:0;overflow-x:hidden;-webkit-text-size-adjust:100%;}
 img,svg,video,canvas{max-width:100%;}
@@ -719,12 +721,6 @@ section,header,footer,.hero,.marquee,.stats,.container,.hero-grid,.about-grid,.c
       <h1 data-en="Your Way." data-ar="طريقك.">Your Way.<span data-en="Your Future." data-ar="مستقبلك.">Your Future.</span></h1>
       <p class="hero-lead" data-en="Welcome to RIS International Schools — a vibrant international community where students learn with confidence, curiosity and purpose."
          data-ar="مرحبًا بكم في مدارس ريس الدولية — مجتمع تعليمي نابض يتعلم فيه الطلاب بثقة وفضول وطموح.">Welcome to RIS International Schools — a vibrant international community where students learn with confidence, curiosity and purpose.</p>
-      <div class="hero-actions">
-        <a class="btn btn-orange hero-whatsapp" href="https://wa.me/8615112054643" target="_blank" rel="noopener" data-en="WhatsApp RIS ↗" data-ar="واتساب ريس ↗">WhatsApp RIS ↗</a>
-        <button class="btn btn-dark" onclick="openPortal('student')" data-en="Student Portal →" data-ar="بوابة الطالب →">Student Portal →</button>
-        <button class="btn btn-orange" onclick="openPortal('teacher')" data-en="Teacher Portal →" data-ar="بوابة المعلم →">Teacher Portal →</button>
-        <a class="btn btn-outline" href="#about" data-en="Explore RIS" data-ar="اكتشف ريس">Explore RIS</a>
-      </div>
       <div class="hero-meta">
         <div class="meta"><strong>2019</strong><span data-en="Established" data-ar="تأسست">Established</span></div>
         <div class="meta"><strong>30+</strong><span data-en="Nationalities" data-ar="جنسية">Nationalities</span></div>
