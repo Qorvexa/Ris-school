@@ -535,6 +535,150 @@ html[dir="rtl"] .card-no{right:auto;left:18px}
   html[dir="rtl"] #mobileMenu .mobile-sheet{text-align:right;direction:rtl}
   html[dir="rtl"] #mobileMenu .mobile-sheet #mobileClose{right:auto!important;left:18px}
 }
+
+/* FINAL RESPONSIVE POLISH — desktop/tablet/phone */
+html,body{width:100%;max-width:100%;}
+body{min-width:0;overflow-x:hidden;-webkit-text-size-adjust:100%;}
+img,svg,video,canvas{max-width:100%;}
+button,a{touch-action:manipulation;}
+
+@media (max-width: 1024px){
+  .container{width:min(94%,960px)}
+  .nav{gap:12px}
+  .brand{min-width:0;flex:0 0 auto}
+  .nav .actions{min-width:0}
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-copy{max-width:850px;margin-inline:auto;width:100%;}
+  .hero-media{width:100%;max-width:900px;margin-inline:auto;}
+  .verified-grid,.global-grid,.about-grid,.ph-grid,.message-wrap,.contact-wrap{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width: 768px){
+  .container{width:calc(100% - 28px);max-width:none;}
+  .section{padding:72px 0;}
+  .nav{min-height:68px;padding:7px 0;}
+  .brand img{width:52px;height:52px;}
+  .actions{margin-left:auto;gap:6px;}
+  .language-switcher{flex:0 0 auto;}
+  .lang-choice{padding:7px 10px;font-size:.68rem;}
+  .menu{width:42px;height:42px;flex:0 0 42px;}
+
+  .hero{padding:20px 0 26px;}
+  .hero-copy{padding:8px 0 6px;}
+  .hero h1{font-size:clamp(2.8rem,11vw,5.2rem);line-height:.88;letter-spacing:-.06em;}
+  .hero h1:after{width:82px;height:6px;margin-top:18px;}
+  .hero-lead{font-size:1rem;line-height:1.6;margin:20px 0;}
+  .hero-actions{display:grid;grid-template-columns:1fr;gap:9px;}
+  .hero-actions .btn{width:100%;min-height:50px;}
+  .hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:22px;}
+  .meta{min-width:0;padding:11px 6px;}
+  .meta strong{font-size:1.25rem;}
+  .meta span{font-size:.56rem;line-height:1.25;letter-spacing:.04em;}
+
+  .hero-media{padding:42px 0 70px;overflow:visible;}
+  .hero-frame,.hero-slideshow{width:100%;height:clamp(330px,68vw,500px);}
+  .hero-frame{border-radius:30px 12px 30px 12px;}
+  .hero-photo-decor{width:100px;height:72px;border-width:4px;border-radius:12px;}
+  .hero-photo-top-left{left:-3px;top:-5px;transform:rotate(-3deg)}
+  .hero-photo-top-right{right:-3px;top:0;transform:rotate(3deg)}
+  .hero-photo-bottom-left{left:0;bottom:-12px;transform:rotate(2deg)}
+  .hero-photo-bottom-right{right:0;bottom:-7px;transform:rotate(-2deg)}
+  .hero-tag{left:10px;bottom:18px;width:58%;max-width:250px;padding:10px 12px;border-radius:15px;}
+  .hero-tag strong{font-size:.76rem;line-height:1.25;}
+  .hero-tag span{font-size:.62rem;line-height:1.25;}
+  .hero-badge{right:8px;bottom:16px;min-width:84px;max-width:92px;padding:9px 7px;border-radius:14px;}
+  .hero-badge .num{font-size:1.05rem;}
+  .hero-badge .small{font-size:.56rem;line-height:1.2;}
+  .hero-arrow{width:38px;height:38px;font-size:1.4rem;}
+  .hero-prev{left:8px}.hero-next{right:8px}
+
+  .section-head{display:block;}
+  .section-head>p{margin-top:14px;}
+  .title{font-size:clamp(2.2rem,10vw,4rem);}
+  .cards,.news-grid{grid-template-columns:1fr;}
+  .academic-wrap{grid-template-columns:1fr;}
+  .academic-side{grid-template-columns:1fr 1fr;}
+  .academic-main{min-height:360px;}
+  .academic-small{min-height:190px;}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px;}
+  .g.big{grid-row:span 2;}
+  .g.wide{grid-column:span 2;}
+  .verified-cards{grid-template-columns:1fr;}
+  .admissions-inner{display:block;}
+  .admissions-actions{display:grid;grid-template-columns:1fr;}
+  .admissions-actions .btn{width:100%;}
+  .footer-grid{grid-template-columns:1fr;}
+
+  .modal{padding:10px;}
+  .modal-box{width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:24px;}
+  .modal-body{padding:22px;}
+  .field input{font-size:16px;}
+}
+
+@media (max-width: 480px){
+  .container{width:calc(100% - 20px);}
+  .topline{height:4px;}
+  .nav{min-height:64px;gap:5px;}
+  .brand img{width:48px;height:48px;}
+  .language-switcher{gap:1px;padding:2px;}
+  .lang-globe{display:none;}
+  .lang-choice{padding:6px 8px;font-size:.61rem;}
+  .menu{width:40px;height:40px;flex-basis:40px;}
+
+  .hero{padding-top:15px;}
+  .hero h1{font-size:clamp(2.55rem,14vw,4rem);}
+  .hero-lead{font-size:.92rem;margin:17px 0;}
+  .hero-meta{grid-template-columns:repeat(3,1fr);gap:5px;}
+  .meta{padding:9px 4px;border-radius:14px;}
+  .meta strong{font-size:1.05rem;}
+  .meta span{font-size:.48rem;}
+
+  .hero-media{padding:34px 0 60px;}
+  .hero-frame,.hero-slideshow{height:clamp(290px,82vw,390px);}
+  .hero-photo-decor{width:76px;height:56px;border-width:3px;border-radius:10px;}
+  .hero-photo-top-left{left:0;top:-5px;}
+  .hero-photo-top-right{right:0;top:-1px;}
+  .hero-photo-bottom-left{left:0;bottom:-9px;}
+  .hero-photo-bottom-right{right:0;bottom:-6px;}
+  .hero-tag{left:8px;bottom:11px;width:57%;max-width:190px;padding:8px 9px;border-radius:12px;}
+  .hero-tag:before{width:6px;height:6px;margin-bottom:5px;}
+  .hero-tag strong{font-size:.66rem;}
+  .hero-tag span{font-size:.55rem;}
+  .hero-badge{right:6px;bottom:10px;min-width:72px;max-width:78px;padding:8px 5px;border-radius:12px;}
+  .hero-badge .num{font-size:.95rem;}
+  .hero-badge .small{font-size:.5rem;}
+  .hero-arrow{width:34px;height:34px;font-size:1.2rem;}
+  .hero-dots{bottom:6px;}
+
+  .academic-side{grid-template-columns:1fr;}
+  .gallery{grid-template-columns:1fr;grid-auto-rows:205px;}
+  .g.big,.g.wide{grid-column:span 1;grid-row:span 1;}
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .stat{padding:18px 7px;}
+  .stat strong{font-size:1.4rem;}
+  .stat span{font-size:.52rem;}
+  .contact-number{font-size:1rem;word-break:break-word;overflow-wrap:anywhere;}
+  .social{width:44px;height:44px;}
+}
+
+@media (max-width: 340px){
+  .container{width:calc(100% - 14px);}
+  .lang-choice{padding:6px 6px;font-size:.57rem;}
+  .hero h1{font-size:2.35rem;}
+  .hero-lead{font-size:.86rem;}
+  .hero-meta{gap:4px;}
+  .meta strong{font-size:.96rem;}
+  .meta span{font-size:.44rem;}
+  .hero-photo-decor{width:68px;height:50px;}
+  .hero-tag{width:60%;max-width:170px;}
+  .hero-badge{min-width:66px;max-width:70px;}
+}
+
+/* Prevent accidental width overflow from long content/URLs on every device */
+section,header,footer,.hero,.marquee,.stats,.container,.hero-grid,.about-grid,.cards,.academic-wrap,.verified-grid,.ph-grid,.gallery,.message-wrap,.news-grid,.global-grid,.contact-wrap,.footer-grid{max-width:100%;min-width:0;}
+.detail strong,.news-body h3,.news-body p,.card h3,.card p,.about-copy p,.message-copy p,.verified-card h3,.verified-card p{overflow-wrap:anywhere;}
+
 </style>
 <!-- All school photography used in this page is sourced from risschools.com only. -->
 </head>
@@ -1046,7 +1190,7 @@ window.renderMobileMenu = function(){
   const teacher = lang === 'ar' ? 'بوابة المعلم' : 'Teacher Portal';
   
   mobileMenu.innerHTML = `
-    <div class="mobile-sheet" style="position:fixed;inset:0;background:#111;color:#fff;z-index:4000;direction:inherit;padding:100px 28px 40px;display:flex;flex-direction:column;gap:18px;overflow:auto">
+    <div class="mobile-sheet" style="position:fixed;inset:0;background:#111;color:#fff;z-index:4000;direction:inherit;padding:calc(76px + env(safe-area-inset-top)) 20px calc(28px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:14px;overflow:auto;box-sizing:border-box;width:100vw;max-width:100vw;min-width:0">
       <button id="mobileClose" style="position:absolute;right:20px;top:18px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#111;font-size:24px">×</button>
       ${links.map(a => `<a href="${a.href}" style="font-size:1.32rem;font-weight:900;padding:5px 0">${a.text}</a>`).join('')}
       <button onclick="openPortal('student');closeMobile()" style="margin-top:10px;padding:15px;border:0;border-radius:15px;background:#fff;color:#111;font-weight:900">${student}</button>
