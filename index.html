@@ -415,6 +415,126 @@ html[dir="rtl"] .card-no{right:auto;left:18px}
   html[dir="rtl"] .hero-badge{left:10px;right:auto}
   html[dir="rtl"] .about-note{right:12px;left:auto}
 }
+
+/* MOBILE / TABLET HARDENING */
+@media (max-width:1120px){
+  .actions{margin-left:auto}
+  .language-switcher{flex-shrink:0}
+  .portal-student,.portal-teacher{display:none!important}
+  .menu{display:block;flex-shrink:0}
+  .nav{gap:10px}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding-left:0;padding-right:0}
+}
+
+@media (max-width:860px){
+  .container{width:min(94%,760px)}
+  .section{padding:88px 0}
+  .hero{padding-top:24px}
+  .hero-media{padding:44px 34px 62px;overflow:visible}
+  .hero-frame,.hero-slideshow{width:100%;height:560px}
+  .hero-photo-decor{width:132px;height:96px;border-width:5px;border-radius:16px}
+  .hero-photo-top-left{left:0;top:-4px}
+  .hero-photo-top-right{right:0;top:4px}
+  .hero-photo-bottom-left{left:8px;bottom:-16px}
+  .hero-photo-bottom-right{right:8px;bottom:-8px}
+  .hero-tag{left:18px;bottom:28px;width:min(330px,62%);padding:16px}
+  .hero-badge{right:14px;bottom:20px;min-width:140px;padding:14px}
+  .hero-arrow{width:42px;height:42px}
+  .hero-prev{left:12px}.hero-next{right:12px}
+  .verified-grid,.about-grid,.ph-grid,.message-wrap,.contact-wrap{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr 1fr}
+  .academic-wrap{grid-template-columns:1fr}
+  .global-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+
+@media (max-width:620px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .container{width:min(92%,540px)}
+  header{width:100%}
+  .nav{min-height:70px;gap:7px}
+  .brand{min-width:0}
+  .brand img{width:54px;height:54px}
+  .actions{gap:6px}
+  .language-switcher{padding:2px;box-shadow:none}
+  .lang-globe{font-size:.78rem;padding:0 3px}
+  .lang-choice{padding:7px 8px;font-size:.63rem}
+  .menu{width:42px;height:42px;border-radius:13px;font-size:1.05rem}
+
+  .hero-grid{gap:12px}
+  .hero-copy{text-align:left}
+  html[dir="rtl"] .hero-copy{text-align:right}
+  .hero h1{font-size:clamp(3rem,15vw,4.6rem);line-height:.88}
+  .hero-lead{font-size:.94rem;margin:22px 0}
+  .hero-actions{gap:8px}
+  .hero-actions .btn{width:100%;min-height:48px}
+  .hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:24px}
+  .meta{min-width:0;padding:11px 5px}
+  .meta strong{font-size:1.18rem}
+  .meta span{font-size:.52rem;letter-spacing:.06em}
+
+  .hero-media{padding:54px 8px 54px}
+  .hero-frame,.hero-slideshow{height:430px;border-radius:30px 12px 30px 12px}
+  .hero-photo-decor{width:92px;height:68px;border-width:4px;border-radius:12px}
+  .hero-photo-top-left{left:-2px;top:0}
+  .hero-photo-top-right{right:-2px;top:2px}
+  .hero-photo-bottom-left{left:0;bottom:-10px}
+  .hero-photo-bottom-right{right:0;bottom:-4px}
+  .hero-rail{right:-10px;width:60px}
+  .hero-tag{left:10px;bottom:16px;width:66%;padding:11px 12px;border-radius:17px}
+  .hero-tag:before{width:7px;height:7px;margin-bottom:7px}
+  .hero-tag strong{font-size:.82rem}
+  .hero-tag span{font-size:.68rem;line-height:1.35}
+  .hero-badge{right:8px;bottom:12px;min-width:92px;padding:10px 8px;border-radius:16px}
+  .hero-badge .num{font-size:1.18rem}
+  .hero-badge .small{font-size:.6rem;line-height:1.25}
+  .hero-arrow{width:36px;height:36px;font-size:1.35rem}
+  .hero-prev{left:7px}.hero-next{right:7px}
+  .hero-dots{bottom:8px;padding:5px 8px;gap:6px}
+  .hero-dot{width:7px;height:7px}
+
+  .section-head{display:block}
+  .section-head>p{margin-top:14px}
+  .about-media img,.director-photo img{height:390px}
+  .about-media:before{left:-8px;top:18px;width:70px;height:70px;border-width:9px}
+  .about-note{left:10px;bottom:14px;padding:13px 15px;border-radius:17px}
+  .gallery{grid-template-columns:1fr;grid-auto-rows:220px}
+  .g.big,.g.wide{grid-column:span 1;grid-row:span 1}
+  .news-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stat{padding:20px 9px}
+  .stat strong{font-size:1.5rem}
+  .stat span{font-size:.57rem}
+  .academic-side{grid-template-columns:1fr}
+  .academic-main{min-height:360px}
+  .academic-small{min-height:205px}
+  .verified-cards{grid-template-columns:1fr}
+  .admissions-inner{display:block}
+  .admissions-actions{margin-top:14px}
+  .admissions-actions .btn{width:100%}
+  .contact-card,.contact-cta{padding:22px}
+  .contact-number{font-size:1.05rem;word-break:break-word}
+  .footer-grid{grid-template-columns:1fr}
+  .floating{right:10px;bottom:10px}
+  .float-btn{width:48px;height:48px;border-radius:15px}
+
+  /* Mobile menu: full-screen, language-aware, touch friendly */
+  #mobileMenu .mobile-sheet{
+    padding:86px 22px 28px!important;
+    overflow-y:auto!important;
+    -webkit-overflow-scrolling:touch;
+  }
+  #mobileMenu .mobile-sheet a,
+  #mobileMenu .mobile-sheet button{
+    min-height:50px;
+    display:flex;
+    align-items:center;
+  }
+  html[dir="rtl"] #mobileMenu .mobile-sheet{text-align:right;direction:rtl}
+  html[dir="rtl"] #mobileMenu .mobile-sheet #mobileClose{right:auto!important;left:18px}
+}
 </style>
 <!-- All school photography used in this page is sourced from risschools.com only. -->
 </head>
@@ -926,7 +1046,7 @@ window.renderMobileMenu = function(){
   const teacher = lang === 'ar' ? 'بوابة المعلم' : 'Teacher Portal';
   
   mobileMenu.innerHTML = `
-    <div class="mobile-sheet" style="position:fixed;inset:0;background:#111;color:#fff;z-index:4000;padding:100px 28px 40px;display:flex;flex-direction:column;gap:18px;overflow:auto">
+    <div class="mobile-sheet" style="position:fixed;inset:0;background:#111;color:#fff;z-index:4000;direction:inherit;padding:100px 28px 40px;display:flex;flex-direction:column;gap:18px;overflow:auto">
       <button id="mobileClose" style="position:absolute;right:20px;top:18px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:#111;font-size:24px">×</button>
       ${links.map(a => `<a href="${a.href}" style="font-size:1.32rem;font-weight:900;padding:5px 0">${a.text}</a>`).join('')}
       <button onclick="openPortal('student');closeMobile()" style="margin-top:10px;padding:15px;border:0;border-radius:15px;background:#fff;color:#111;font-weight:900">${student}</button>
